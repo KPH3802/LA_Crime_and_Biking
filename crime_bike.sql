@@ -1,15 +1,16 @@
-
--- New Zip	Trip ID	Duration
 CREATE TABLE bike_LA(
-	Zip_Code int,
-	Trip_ID int	
+	new_zip int,
+	bike_ride_count int	
 );
+
 
 CREATE TABLE crimes_LA(
-	DR_number int,
-	Zip_Code int
+	zipCode int,
+	crime_count int
 );
 
+SELECT *
+FROM crimes_LA;
 SELECT b.Zip_Code, b.Trip_ID, c.DR_number
 FROM bike_LA AS b
 JOIN crimes_LA AS c
