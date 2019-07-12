@@ -10,8 +10,7 @@ CREATE TABLE crimes_LA(
 );
 
 
-SELECT *
-FROM crimes_LA;
+
 SELECT b.new_zip, b.bike_ride_count, c.crime_count
 FROM bike_LA AS b
 JOIN crimes_LA AS c
