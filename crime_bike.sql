@@ -9,9 +9,10 @@ CREATE TABLE crimes_LA(
 	crime_count int
 );
 
+
 SELECT *
 FROM crimes_LA;
-SELECT b.Zip_Code, b.Trip_ID, c.DR_number
+SELECT b.new_zip, b.bike_ride_count, c.crime_count
 FROM bike_LA AS b
 JOIN crimes_LA AS c
-ON b.Zip_Code = c.Zip_Code;
+ON b.new_zip = c.zipCode;
